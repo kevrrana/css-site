@@ -1,0 +1,88 @@
+/*Genel Biçimlendirme*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;/*yazı fontunu değiştiriyor*/
+    
+}
+
+/*header bölümü*/
+
+body{
+    min-height:100vh; /*vh view height görünen alanın yüksekliği*/
+    display: flex;
+    flex-direction: column;/*içindeki nesnelerin hangi yönde yerleştiği(column = alt alta)*/
+    font-size:150%;/*yazıyı büyültür*/
+    line-height: 1.5em;
+
+}
+
+header, footer{
+    padding-top: 30px;/*tepesinden 30px aşağıya iner*/
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+#main-menu{
+    list-style: none; /*#main-menusünün listesini kaldırır (noktayı(ul olduğu için))*/
+    display: flex; /*nesneleri yan yana koyar*/
+    justify-content: center;/*içindeki flex öğeleri ortalanır*/
+
+}
+
+/*main-menünün içindeki "a"larını değiştirir*/
+
+#main-menu a{
+    display: block;/*genişlik ve yüksekliği verir*/
+    color: #fff;
+    text-decoration: none; /*alttaki çizgiyi kaldırır*/
+    padding:12px 10px;
+}
+
+/*orta bölüm*/
+main{
+    padding: 20px;
+    display: flex;
+    gap: 20px;/*içindeki nesneler arasında boşluk bırakmak*/
+    /*"flex: auto;" orta kısmı aşağıya doğru indirir*/
+}
+
+/*content'in id'si olduğu için başına "#" koyuyoruz*/
+#content{
+    background-color: #caccd1;
+    padding: 20px;
+    border: #52565e solid 5px;/*kenarlık yapar*/
+    flex: 9;
+}
+
+#content p{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+aside{
+    background-color: #9ca1aa;
+    padding: 20px;
+    border: #52565e solid 5px;
+    flex: 3;
+}
+
+aside h2{
+    margin-bottom: 10px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside a{
+    color: #000;
+    /*"text-decoration: none;" altı çizilmiş olan yazının çizgisini kaldırır*/
+}
+
+footer{
+    padding-bottom: 30px;
+}
