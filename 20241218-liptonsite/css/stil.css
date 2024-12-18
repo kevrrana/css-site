@@ -1,0 +1,91 @@
+*{ /*sayfadaki tüm etiketlere uygulanır*/
+    margin: 0;/*dış boşlukları sıfırla*/
+    padding: 0;/*iç boşlukları sıfırla*/
+    box-sizing: border-box;/*kutu genişlik ve yüksekliğini bordura kadar kadar belirler*/
+}
+
+body{
+    background-image: url(../img/fresh-spring-background.jpg);
+    background-size: cover;/*cover=kaplama(resmin ekranı kaplaması için)*/
+    min-height: 100vh;/*100vh görünen yüksekliğinin tamamını gösterir*/
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#logo{
+    text-align: center;/*logoyu ortaladık*/
+    padding: 25px;
+}
+
+#logo img{
+    width: 150px;
+}
+
+.container{
+    margin: auto;
+    width: 70%;
+}
+
+#menu{
+    background-color: white;
+    box-shadow: 0 0 5px gray;/*gölge verir. 0 0 x ve y konumunu 5px kalınlığını 4. de rengini veriyo*/
+}
+
+#menu ul{
+    display: flex;/*esneklik yatay*/
+    justify-content: space-around;/*flex olan nesnelerin nasıl hizalanacağını ayaralar*/
+    list-style-type: none;/*listenin yandaki şekli kaldırır*/
+}
+
+#menu a{
+    text-decoration: none;/*linklerin altındaki çizgileri kaldırır*/
+    color: #e66c06;
+    padding: 10px;
+    display: inline-block;
+    transition: 1s ;/*geçikme süresi ekler*/
+}
+
+#menu a:hover{/*hover=üzerine gelince yapılacak değişiklikler*/
+    background-color:  #e66c06;
+    color:white ;
+    transition: 1s ;/*geçikme süresi ekler*/
+
+}
+
+.banner{
+    text-align: center; /*resmi ortaladık*/    
+}
+
+.urunler{
+    display: flex;
+    gap: 24px;/*aralık yapmasını sağlar*/
+}
+
+.urun{
+    flex: 1;/*urun sınıfına ait divlerin aynı gelişlikte olmasını sağlar*/
+    box-shadow: 0 0 5px gray;
+}
+
+.urun img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /*basık gözükmesin ve bulunduğu kutunun ekranını kaplamasını sağlar*/
+}
+
+footer{
+    background-color: #fff;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    justify-content: space-between;/*baştakini kutuyu sola son kutuyuda sağa yatırır*/
+    padding: 5px;
+    margin: 20px 0px;
+}
+
+.sag{
+    color:#e66c06 ;
+}
+
+.sol{
+    color: rgb(130, 151, 144);
+}
